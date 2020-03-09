@@ -63,13 +63,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                return false;
 
-                //String myToast = "Hello";
-                //int duration = Toast.LENGTH_SHORT;
+                String myToast = "Hello";
+                int duration = Toast.LENGTH_SHORT;
 
-                //Toast toast = Toast.makeText(getApplicationContext(),myToast,duration);
-                //toast.show();
+                Toast toast = Toast.makeText(getApplicationContext(),myToast,duration);
+                toast.show();
+
+                return true;
 
             }
         });
