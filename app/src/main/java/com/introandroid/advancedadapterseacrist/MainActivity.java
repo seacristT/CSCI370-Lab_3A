@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String myToast = "Hello";
+                String myToast = "You selected "  + students.get(position).getStudentLastName();
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(getApplicationContext(),myToast,duration);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String myToast = "Hello";
+                String myToast = "You selected "  + students.get(position).getStudentFirstName();
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(getApplicationContext(),myToast,duration);
